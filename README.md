@@ -23,7 +23,7 @@ namespace Ice.Utils {
             public Action<int, Int64> Callback;
             public LinkedListNode<Event> LinkNode;
         }
-
+        private int zeroID = 0;
         private int nextId_ = 1;
         private Dictionary<int, Event> ids_ = new Dictionary<int, Event>();
         private LinkedList<Event> events_ = new LinkedList<Event>();
